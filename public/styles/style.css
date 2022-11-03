@@ -472,11 +472,41 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.ml-10{
+  margin-left: 2.5rem;
+}
+.ml-5{
+  margin-left: 1.25rem;
+}
+.mr-10{
+  margin-right: 2.5rem;
+}
 .block{
   display: block;
 }
-.text-center{
-  text-align: center;
+.flex{
+  display: flex;
+}
+.h-80{
+  height: 20rem;
+}
+.h-16{
+  height: 4rem;
+}
+.w-48{
+  width: 12rem;
+}
+.items-center{
+  align-items: center;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.justify-around{
+  justify-content: space-around;
 }
 .text-3xl{
   font-size: 1.875rem;
