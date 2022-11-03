@@ -1,10 +1,12 @@
 import express from "express";
 import usersRouter from './user';
+import productsRouter from './produit';
 const path = require("path");
 
 const app = express();
 const port = process.env.PORT || "8000";
 app.use(usersRouter);
+app.use(productsRouter);
 var http = require('http').createServer(app);
 
 app.set("view engine", "pug");
