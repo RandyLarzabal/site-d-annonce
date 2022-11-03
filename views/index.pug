@@ -1,18 +1,16 @@
 extends layout.pug
 
 block content
-	div(class= "bg-slate-200 w-auto")
-		img(class="w-60 rounded-lg" src="/images/drone.jpg")
-		div(class="flex p-16")
-			div
-				p(class="flex p-16") Frame Limited Edition
-				p(class="flex p-16") Drone FPV RTF
-			div
-				p(class="flex p-16") $230
-				p(class="flex p-16") $300
-			div
-				p(class="flex p-16") -50%
-				
-		
-
-	
+ div(class='main py-12')
+        section(class='product-list-section container mx-auto')
+            div(class='product__list grid grid-cols-4')
+                div(class='product__list__item')
+                    a(href='/product')
+                        div(class='product__list__item__image w-full aspect-square obejct-cover mb-4')
+                            img(src='https://picsum.photos/1920/1080', alt='product', class='rounded-xl h-full w-full object-cover')
+                        div(class='product__list__item__info flex collum-2')
+                            div(class='product__list__item__info__title mb-4')
+                                h1(class=' text-2xl font-bold') Fall Limited Edition Sneakers
+                            div(class='product__list__item__info__price text-right')
+                                span(class='text-2xl font-bold') $125.00
+                
