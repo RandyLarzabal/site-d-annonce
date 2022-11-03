@@ -3,6 +3,8 @@ extends layout.pug
 block content
  div(class='main py-12')
         section(class='product-list-section container mx-auto')
+            div(class='product__list__title')
+                h1(class='text-4xl font-bold mb-8') Liste des produits
             div(class='product__list grid grid-cols-4')
                 div(class='product__list__item')
                     a(href='/product')
