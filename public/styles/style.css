@@ -509,6 +509,9 @@ html {
     max-width: 1536px;
   }
 }
+.alo{
+  gap: 15px;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -539,6 +542,9 @@ html {
 }
 .mb-10{
   margin-bottom: 2.5rem;
+}
+.ml-auto{
+  margin-left: auto;
 }
 .block{
   display: block;
