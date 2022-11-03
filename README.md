@@ -8,3 +8,6 @@
 <p>Backend EXPRESS (typescript)</p>
 <p>FrontEnd PUG</p>
 <p>Tailwind</p>
+
+<h1>Liens externes</h1>
+<a href="https://daily.dev/blog/how-to-use-tailwindcss-with-node-js-express-and-pug" target="_blank">intégrer tailwind avec pug</a>
