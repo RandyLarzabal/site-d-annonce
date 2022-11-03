@@ -3,11 +3,12 @@ import knex from 'knex';
 const db = knex({
   client: 'mysql2',
   connection: {
-    host: '127.0.0.1',
-    port: 3306,
+    host: 'localhost',
+    port: 3036,
     user: 'root',
-    password: 'azerty31',
-    database: 'db',
+    password: 'root',
+    database: 'siteannonce',
+    socketPath: process.env.socketPath || '/Applications/MAMP/tmp/mysql/mysql.sock'
   },
 });
 export default db;
