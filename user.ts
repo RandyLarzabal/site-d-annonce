@@ -45,8 +45,16 @@ router.post('/api/user/login', (req, res) => {
     });
 });
 
-//router.get('/api/user/me', isLoggedIn, (req: UserRequest, res) => {
-//  return res.send(req.user);
-//});
+router.get('/api/user/me', (req, res) => {
+    db('users')
+    .insert({
+      username: 'blabla',
+      password: 'alo',
+    })
+    .then((e) => {
+      console.log("ez")
+    });
+  //return res.send(req.user);
+});
 
 export default router;
