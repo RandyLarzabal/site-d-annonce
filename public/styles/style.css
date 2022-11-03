@@ -379,6 +379,10 @@ video {
   display: none;
 }
 
+html {
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -472,13 +476,151 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container{
+  width: 100%;
+}
+@media (min-width: 640px){
+
+  .container{
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px){
+
+  .container{
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px){
+
+  .container{
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px){
+
+  .container{
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px){
+
+  .container{
+    max-width: 1536px;
+  }
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.mr-10{
+  margin-right: 2.5rem;
+}
+.mr-40{
+  margin-right: 10rem;
+}
+.ml-40{
+  margin-left: 10rem;
+}
+.mb-8{
+  margin-bottom: 2rem;
+}
 .block{
   display: block;
 }
-.text-center{
-  text-align: center;
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+.h-\[\]{
+  height: ;
+}
+.h-\[445px\]{
+  height: 445px;
+}
+.h-full{
+  height: 100%;
+}
+.w-\[\]{
+  width: ;
+}
+.w-\[445\]{
+  width: 445;
+}
+.w-\[445px\]{
+  width: 445px;
+}
+.w-full{
+  width: 100%;
+}
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-col{
+  flex-direction: column;
+}
+.justify-center{
+  justify-content: center;
+}
+.gap-40{
+  gap: 10rem;
+}
+.gap-5{
+  gap: 1.25rem;
+}
+.gap-10{
+  gap: 2.5rem;
+}
+.gap-28{
+  gap: 7rem;
+}
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.font-bold{
+  font-weight: 700;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.text-orange{
+  --tw-text-opacity: 1;
+  color: rgb(255 126 27 / var(--tw-text-opacity));
+}
+.text-gray{
+  --tw-text-opacity: 1;
+  color: rgb(105 112 125 / var(--tw-text-opacity));
 }
