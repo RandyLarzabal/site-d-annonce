@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="fr")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -7,5 +7,8 @@ html(lang="en")
     title Node.js with TailwindCSS, Express and Pug
     link(href="./styles/style.css", rel="stylesheet")
   body
-    h1 Hello world!
-    p My starter template
+    include header.pug
+    
+    block content
+    
+    footer 

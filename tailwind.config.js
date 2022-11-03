@@ -2,7 +2,16 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'orange': '#FF7E1B',
+        'black': '#1D2026',
+        'gray': '#69707D',
+      },
+      fontFamily: {
+        'kumbh': ['Kumbh Sans', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
