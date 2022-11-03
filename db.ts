@@ -4,7 +4,7 @@ const db = knex({
   client: 'mysql2',
   connection: {
     host: 'localhost',
-    port: 3036,
+    port: 3306,
     user: 'root',
     password: 'root',
     database: 'siteannonce',
