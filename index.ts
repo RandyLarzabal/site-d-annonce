@@ -1,12 +1,14 @@
 import express from "express";
-import productRouter from './produit';
+import productRouter from "./produit";
 import usersRouter from "./user";
-import db from './db'
+import db from "./db";
+import * as dotenv from "dotenv";
+dotenv.config();
 const path = require("path");
 
 const app = express();
-const port = process.env.PORT || "8000";
-app.use(productRouter)
+const port = process.env.SERVER_PORT || "8000";
+app.use(productRouter);
 app.use(usersRouter);
 var http = require("http").createServer(app);
 
@@ -17,15 +19,12 @@ const server = http.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);
 });
 
-
-
-app.get("/", (req, res) => { 
-    db('products')
-    .then((e) => {
-      if(e) {
-        res.render("index", {products : e});
-      }
-    });
+app.get("/", (req, res) => {
+  db("products").then((e) => {
+    if (e) {
+      res.render("index", { products: e });
+    }
+  });
 });
 
 app.get("/product", (req, res) => {

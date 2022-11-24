@@ -1,14 +1,15 @@
-import knex from 'knex';
+import knex from "knex";
 
 const db = knex({
-  client: 'mysql2',
+  client: "mysql2",
   connection: {
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: 'root',
-    database: 'siteannonce',
-    socketPath: process.env.socketPath || '/Applications/MAMP/tmp/mysql/mysql.sock'
+    host: process.env.DB_HOST,
+    port: Number(process.env.DB_PORT) || 3306,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    socketPath:
+      process.env.SOCKET_PATH,
   },
 });
 export default db;
