@@ -1,3 +1,6 @@
+<h1>Description du projet</h1>
+<p>Développement d'une plateforme de consommation collaborative qui met en relation essentiellement des particuliers, souhaitant vendre ou acheter des biens ou des services.</p>
+
 <h1>Features:</h1>
 <p>1. Connexion / création de compte</p>
 <p>2. Page d'accueil / affichage des annonces</p>
