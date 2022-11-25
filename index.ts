@@ -7,7 +7,9 @@ dotenv.config()
 const path = require('path')
 
 const app = express()
-const port = process.env.SERVER_PORT || '8000'
+const port = process.env.SERVER_PORT || 8500
+
+
 app.use(productRouter)
 app.use(usersRouter)
 const http = require('http').createServer(app)
@@ -33,4 +35,8 @@ app.get('/product', (req, res) => {
 
 app.get('/add-product', (req, res) => {
     res.render('add-product')
+})
+
+app.get('/login', (req, res) => {
+    res.render('login')
 })

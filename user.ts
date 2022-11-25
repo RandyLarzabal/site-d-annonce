@@ -2,6 +2,7 @@ import { Router } from 'express'
 import db from './db'
 import * as bcrypt from 'bcrypt'
 import * as jwt from 'jsonwebtoken'
+import axios from 'axios'
 
 const router = Router()
 const secret = process.env.JWT_SECRET || 'secret'
@@ -26,6 +27,10 @@ router.post('/api/user/create', (req, res) => {
                 res.send('username already used')
             }
         })
+})
+router.post('/api/test', (req, res) => {
+    axios.post('http://localhost:4000/signup', {email: 'a@a.com', password: 'azerty'})
+    .then(e => console.log(e.data))
 })
 router.post('/api/user/login', (req, res) => {
     if (!req.body.username || !req.body.password) return res.status(400)
